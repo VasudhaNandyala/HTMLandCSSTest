@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                /* General style for the gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px; 
+            width: 80%; 
+            margin: auto; 
+        }
+        
+        /* Style for the images */
+        .gallery img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(100%); 
+            transition: filter 0.3s ease; 
+        }
+        
+        /* Remove grayscale on hover */
+        .gallery img:hover {
+            filter: grayscale(0%); 
+        }
+        
+        h1{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="img1.jpeg" alt="img1">
+        <img src="img2.jpeg" alt="img2">
+        <img src="img3.jpeg" alt="img3">
+        <img src="img4.jpeg" alt="img4">
+    </div>
+</body>
+</html>

@@ -100,6 +100,25 @@
             transform:scale(1.2);
         }
 
+        /* Question-8 */
+        /* Box styling */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple; 
+            /* Apply animation */
+            animation: slide 2s linear infinite; 
+        }
+
+        /* Animation definition */
+        @keyframes slide {
+            0% {
+                transform: translateX(0); 
+            }
+            100% {
+                transform: translateX(300px); 
+            }
+        }
 
     </style>
 </head>
@@ -148,8 +167,16 @@
 
     <!-- Question-6 -->
     <button id="b">submit</button>
+    <br><br><br>
 
-    <!-- Question 7 -->
+    <!-- Question-7 -->
     <button id="but">Hover Me</button>
+    <br><br><br>
+
+    <!-- Question-8 -->
+    <div class="box"></div>
+    <br><br><br>
+
+
 </body>
 </html>
